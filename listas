@@ -1,0 +1,11 @@
+#listas 1
+
+print('Digame cuantas palabras tiene la lista:')
+numeroPal=int(input())
+palabras=[]
+for i in range(numeroPal):
+    print('Digite la palabra numero %s: ' % (i+1))
+    p=str(input())
+    palabras.append(p)
+
+print(palabras)
