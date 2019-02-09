@@ -1,0 +1,31 @@
+#listas 2
+def listas2():
+    print('Digame cuantas palabras tiene la lista:')
+    numeroPal=int(input())
+    palabras=[]
+
+    if numeroPal != 0:
+        for i in range(numeroPal):
+            print('Digite la palabra numero %s: ' % (i+1))
+            p=str(input())
+            palabras.append(p)
+
+
+        print('La Lista dada es: ',palabras)
+        print('Digame la palabra que desea buscar en la lista:')
+        x=str(input())
+        y=len(palabras)
+        contador = 0
+        for i in range(y):
+
+         if x in palabras:
+            contador = int(contador)+ 1
+
+        print('Numero de veces que se repite la palabra en la lista:',contador)
+
+    else :
+        print('Imposible!')
+
+
+
+listas2()
