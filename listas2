@@ -4,7 +4,7 @@ def listas2():
     numeroPal=int(input())
     palabras=[]
 
-    if numeroPal != 0:
+    if numeroPal > 0:
         for i in range(numeroPal):
             print('Digite la palabra numero %s: ' % (i+1))
             p=str(input())
