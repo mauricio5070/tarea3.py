@@ -18,7 +18,7 @@ def listas2():
         contador = 0
         for i in range(y):
 
-         if x in palabras:
+         if x in palabras[i]:
             contador = int(contador)+ 1
 
         print('Numero de veces que se repite la palabra en la lista:',contador)
