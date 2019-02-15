@@ -1,0 +1,41 @@
+#listas 3
+def listas3():
+    print('Digame cuantas palabras tiene la lista:')
+    numeroPal=int(input())
+    palabras=[]
+
+    if numeroPal >= 2:
+        for i in range(numeroPal):
+            print('Digite la palabra numero %s: ' % (i+1))
+            p=str(input())
+            palabras.append(p)
+
+
+        print('La Lista dada es: ',palabras)
+        print('Digame la primera palabra que desea sustituir en la lista:')
+        x1=str(input())
+        print('Digame la segunda palabra que desea sustituir en la lista:')
+        x2=str(input())
+        
+        y=len(palabras)
+        aux=''
+        for i in range(y):
+
+            if x1 in palabras[i]:
+                pos= i
+        for j in range(y):    
+            if x2 in palabras[j]:
+                pos2=j
+                
+        palabras[pos]=x2
+        palabras[pos2]=x1
+         
+
+        print('El nuevo orden de la lista:',palabras)
+
+    else :
+        print('Imposible!')
+
+
+
+listas3()
