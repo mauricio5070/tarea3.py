@@ -1,0 +1,22 @@
+#listas 7
+def listas7():
+    print('Digame cuantas palabras tiene la lista:')
+    numeroPal=int(input())
+    palabras=[]
+
+    if numeroPal >= 2:
+        for i in range(numeroPal):
+            print('Digite la palabra numero %s: ' % (i+1))
+            p=str(input())
+            if p not in palabras:
+                
+                palabras.append(p)
+            
+        print('La Lista dada es: ',palabras)
+
+    else :
+        print('Imposible!')
+
+
+
+listas7()
