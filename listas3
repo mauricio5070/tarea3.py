@@ -18,7 +18,7 @@ def listas3():
         x2=str(input())
         
         y=len(palabras)
-        aux=''
+        
         for i in range(y):
 
             if x1 in palabras[i]:
