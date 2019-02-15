@@ -1,0 +1,22 @@
+#listas 6
+def listas6():
+    print('Digame cuantas palabras tiene la lista:')
+    numeroPal=int(input())
+    palabras=[]
+
+    if numeroPal >= 2:
+        for i in range(numeroPal):
+            print('Digite la palabra numero %s: ' % (i+1))
+            p=str(input())
+            palabras.append(p)
+            
+        inv=palabras[::-1]
+        print('La Lista dada es: ',palabras)
+        print('La lista inversa es:',inv)
+
+    else :
+        print('Imposible!')
+
+
+
+listas6()
