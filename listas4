@@ -1,0 +1,28 @@
+#listas 4
+def listas4():
+    print('Digame cuantas palabras tiene la lista:')
+    numeroPal=int(input())
+    palabras=[]
+
+    if numeroPal >= 2:
+        for i in range(numeroPal):
+            print('Digite la palabra numero %s: ' % (i+1))
+            p=str(input())
+            palabras.append(p)
+
+
+        print('La Lista dada es: ',palabras)
+        print('Digame la palabra que desea ELIMINAR en la lista:')
+        x1=str(input())
+        
+        y=len(palabras)
+        palabras.remove(x1)
+ 
+        print('El nuevo orden de la lista:',palabras)
+
+    else :
+        print('Imposible!')
+
+
+
+listas4()
