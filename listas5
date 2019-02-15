@@ -1,0 +1,50 @@
+#listas 5
+def listas5():
+    print('Digame cuantas palabras tiene la lista 1:')
+    numeroPal=int(input())
+    palabras=[]
+    if numeroPal >= 2:
+        for i in range(numeroPal):
+            print('Digite la palabra numero %s: ' % (i+1))
+            p=str(input())
+            palabras.append(p)
+
+        print('La Lista uno es: ',palabras)
+      
+
+    else :
+        print('Imposible!')
+        
+        
+        
+        
+    print('Digame cuantas palabras tiene la lista 2:')
+    numeroPal2=int(input())
+    palabras2=[]
+    
+    if numeroPal2 > 0:
+        for i in range(numeroPal2):
+            print('Digite la palabra numero %s: ' % (i+1))
+            p=str(input())
+            palabras2.append(p)
+
+
+        print('La Lista dos es: ',palabras2)
+    else :
+        print('Imposible!')
+        
+        
+    y=len(palabras)
+    w=len(palabras2)
+    i=0
+    j=0
+    for i in range(0,y):
+        for j in range(0,w):
+            if palabras[i]==palabras2[j]:
+                pos=palabras[i]
+                palabras.remove(pos)
+    print('Eliminando duplicados....')           
+    print('La Lista uno es: ',palabras)
+    print('La Lista dos es: ',palabras2)
+
+listas5()
